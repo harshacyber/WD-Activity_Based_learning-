@@ -1,0 +1,134 @@
+
+/* Modern Blue and Purple Theme */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #26324a;
+    background: #f1f0ff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 32px 16px;
+    color: white;
+    background: linear-gradient(135deg, #172554, #6d28d9);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin: 4px 0 18px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #facc15;
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    width: min(900px, 92%);
+    margin: 24px auto;
+}
+
+/* Sections */
+section {
+    background: white;
+    margin: 18px 0;
+    padding: 22px;
+    border-radius: 12px;
+    border-left: 5px solid #7c3aed;
+    box-shadow: 0 4px 12px #17255415;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px #17255425;
+}
+
+/* Headings */
+h2 {
+    color: #5b21b6;
+    margin-top: 0;
+}
+
+/* Cards */
+.card {
+    background: #f3e8ff;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd6fe;
+}
+
+.card h3 {
+    margin-top: 4px;
+    color: #4338ca;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 14px;
+}
+
+/* Icons */
+.food-icon,
+.place-icon {
+    font-size: 2rem;
+}
+
+/* Links */
+a {
+    color: #6d28d9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px;
+    color: white;
+    background: #172554;
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 520px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 17px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+}
